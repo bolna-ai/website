@@ -1,0 +1,26 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Hero from "@/components/landing/Hero.astro";
+import UseCases from "@/components/landing/UseCases.astro";
+import Features from "@/components/landing/Features.astro";
+import { AstroSeo } from "@astrolib/seo";
+---
+
+<!---
+Use AstroSeo in all the pages you want different Seo than the index page
+-->
+<AstroSeo
+  title="Bolna - create your voice based AI agent"
+  description="Create voice based AI agents with 0 code"
+  canonical="https://bolna.dev"
+  twitter={{
+    handle: "@TwitterHandle",
+    site: "@site",
+    cardType: "summary_large_image",
+  }}
+/>
+<BaseLayout>
+  <Hero />
+  <Features />
+  <UseCases />
+</BaseLayout>
