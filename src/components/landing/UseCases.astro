@@ -39,7 +39,7 @@ import { useCases } from "../../data/useCases.json";
                     {template.name}
                   </h4>
                   <p class="mt-1 text-sm text-zinc-500">
-                    {template.episode} - {template.season}
+                    {template.episode} {template.season}
                   </p>
                   <p class="mt-2 text-sm text-zinc-600">
                     {template.description}
@@ -50,7 +50,7 @@ import { useCases } from "../../data/useCases.json";
               <div class=" mt-8">
                 <audio controls class="w-full">
                   <source
-                    src=""
+                    src={template.audio}
                     type="audio/mpeg"
                   />
                 </audio>
